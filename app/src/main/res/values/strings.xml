@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">SuperHeroes</string>
     <string name="title_activity_lista_heroes">ListaHeroes</string>
+    <string name="titulo">SuperHeroes</string>
+    <string name="verLista">Ver lista de héroes</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

@@ -1,6 +1,6 @@
 package org.example.superheroes.data.model
 
-data class Result(
+data class HeroeDb(
     val comics: Comics,
     val description: String,
     val events: Events,
