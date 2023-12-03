@@ -1,5 +1,6 @@
 package org.example.superheroes.data
 
+import org.example.superheroes.data.model.RemoteResult
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
@@ -13,7 +14,7 @@ interface RetrofitService {
         @Query("ts") ts: String,
         @Query("apikey") apiKey: String,
         @Query("hash") hash: String
-    )
+    ): RemoteResult
 
 }
 
