@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/ivHeroe"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNombreHeroe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Nombre Heroe"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivHeroe"/>
+
+    <TextView
+        android:id="@+id/tvNombreReal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Nombre Real"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreHeroe"
+        app:layout_constraintStart_toEndOf="@+id/ivHeroe"/>
+
+    <TextView
+        android:id="@+id/tvPublisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Publisher"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreReal"
+        app:layout_constraintStart_toEndOf="@+id/ivHeroe"/>
+
+    <TextView
+        android:id="@+id/tvOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Origen"
+        app:layout_constraintTop_toBottomOf="@+id/tvPublisher"
+        app:layout_constraintStart_toEndOf="@+id/ivHeroe"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
