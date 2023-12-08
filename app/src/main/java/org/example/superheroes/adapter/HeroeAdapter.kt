@@ -1,5 +1,6 @@
 package org.example.superheroes.adapter
 
+import android.content.DialogInterface.OnClickListener
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -7,7 +8,7 @@ import org.example.superheroes.R
 import org.example.superheroes.data.superheroemodel.SuperHeroe
 
 
-class HeroeAdapter(private val heroesList: List<SuperHeroe>) :
+class HeroeAdapter(private val heroesList: List<SuperHeroe>, private val onClickListener:(SuperHeroe) -> Unit) :
     RecyclerView.Adapter<HeroViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HeroViewHolder {
@@ -19,7 +20,7 @@ class HeroeAdapter(private val heroesList: List<SuperHeroe>) :
 
     override fun onBindViewHolder(holder: HeroViewHolder, position: Int) {
         val item = heroesList[position]
-        holder.render(item)
+        holder.render(item, onClickListener)
     }
 
 
