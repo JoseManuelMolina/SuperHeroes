@@ -5,28 +5,37 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.Window
-import android.widget.Button
-import android.widget.Toast
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
+import com.bumptech.glide.Glide
+import org.example.superheroes.data.superheroemodel.SuperHeroe
+
+@Suppress("DEPRECATION")
+class HeroeActivity : AppCompatActivity() {
 
 
-class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_heroe)
 
         var toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        val extras = intent.extras
+        val heroe = extras?.getSerializable("superHeroe") as SuperHeroe
+        val foto = findViewById<ImageView>(R.id.fotoHeroe)
+        val nombreHeroe = findViewById<TextView>(R.id.nombreHeroe)
+        val nombreReal = findViewById<TextView>(R.id.nombreReal)
+        val origen = findViewById<TextView>(R.id.origen)
+        val publisher = findViewById<TextView>(R.id.publisher)
 
-        val botonLista = findViewById(R.id.botonVerLista) as Button
 
-        botonLista.setOnClickListener(){
-            val intent = Intent(this, ListaHeroesActivity::class.java)
-            startActivity(intent)
-        }
+        nombreHeroe.append(heroe.superheroe)
+        nombreReal.append(heroe.realName)
+        origen.append(heroe.origen)
+        publisher.append(heroe.publisher)
+        Glide.with(this).load(heroe.photo).into(foto)
 
     }
 
@@ -59,4 +68,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, ListaHeroesActivity::class.java)
         startActivity(intent)
     }
+
+
 }

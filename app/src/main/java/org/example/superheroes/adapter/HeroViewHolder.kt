@@ -19,7 +19,7 @@ class HeroViewHolder(view: View): RecyclerView.ViewHolder(view) {
 //        binding.tvNombreReal.text = heroeModel.realName
 //        binding.tvPublisher.text = heroeModel.publisher
 //        binding.tvOrigen.text = heroeModel.origen
-        Glide.with(binding.ivHeroe.context).load(heroeModel.photo).into(binding.ivHeroe)
+        Glide.with(binding.ivHeroe.context).load(heroeModel.tb).into(binding.ivHeroe)
 //        Cada vez que clickemos en una celda, vamos a pasar a la activity la información del heroe
         itemView.setOnClickListener{
             onClickListener(heroeModel)
