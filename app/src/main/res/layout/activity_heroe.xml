@@ -21,22 +21,26 @@
 
     <ImageView
         android:id="@+id/fotoHeroe"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="350dp"
-        tools:background="@color/black"
+        android:contentDescription="@string/imageDesc"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintStart_toStartOf="parent"/>
+        tools:background="@color/black"/>
 
     <TextView
         android:id="@+id/nombreHeroe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fotoHeroe"
-        android:layout_marginTop="10dp"
-        android:textSize="18sp"
-        android:text="@string/nombreHeroe" />
+        tools:text="Nombre de Heroe" />
 
     <TextView
         android:id="@+id/nombreReal"

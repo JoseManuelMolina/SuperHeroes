@@ -19,7 +19,7 @@ class HeroesProvider {
                 "DC Comics",
                 "Gotham City",
                 "Bruce Wayne",
-                "https://firebasestorage.googleapis.com/v0/b/superheroes-efb16.appspot.com/o/SuperHeroes%2Fbatman.jpg?alt=media&token=bba00af2-3418-4489-bfee-6f7bf175f68e",
+                "https://firebasestorage.googleapis.com/v0/b/superheroes-efb16.appspot.com/o/SuperHeroes%2Fbatman.jpg?alt=media&token=813b7f54-80b0-4c43-ac7c-8c16591eeb6a",
                 "https://firebasestorage.googleapis.com/v0/b/superheroes-efb16.appspot.com/o/SuperHeroesThumbnail%2Fbatman.jpg?alt=media&token=8a26aadd-8b90-4c43-b101-8f3a7480efc0"
             ),
             SuperHeroe(

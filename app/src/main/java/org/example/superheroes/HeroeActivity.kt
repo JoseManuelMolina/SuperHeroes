@@ -31,7 +31,7 @@ class HeroeActivity : AppCompatActivity() {
         val publisher = findViewById<TextView>(R.id.publisher)
 
 
-        nombreHeroe.append(heroe.superheroe)
+        nombreHeroe.append(heroe.superheroe.uppercase())
         nombreReal.append(heroe.realName)
         origen.append(heroe.origen)
         publisher.append(heroe.publisher)
