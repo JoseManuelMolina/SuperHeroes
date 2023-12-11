@@ -1,5 +1,5 @@
 # SuperHeroes
-## App usando superheroapi -> https://superheroapi.com/
+
 
 **Requisitos de la aplicación**
 
