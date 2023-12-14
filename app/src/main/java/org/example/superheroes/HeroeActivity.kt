@@ -20,6 +20,7 @@ class HeroeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_heroe)
 
         var toolbar: Toolbar = findViewById(R.id.toolbar)
+        toolbar.setTitle("")
         setSupportActionBar(toolbar)
 
         val extras = intent.extras

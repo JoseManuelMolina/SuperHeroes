@@ -24,6 +24,7 @@ class ListaHeroesActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var toolbar: Toolbar = findViewById(R.id.toolbar)
+        toolbar.setTitle("")
         setSupportActionBar(toolbar)
 
         initRecyclerView()
